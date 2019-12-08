@@ -1,0 +1,8 @@
+prefix=/home/fftai/Documents/Robot-ROS/udacity_project_gochaseit/devel
+
+Name: my_robot
+Description: Description of my_robot
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/fftai/Documents/Robot-ROS/udacity_project_gochaseit/devel/lib 
+Requires: 
