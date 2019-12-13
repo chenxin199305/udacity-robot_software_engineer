@@ -1,8 +1,8 @@
-# Install script for directory: /home/fftai/Documents/Robot-ROS/udacity_project_gochaseit/src/ball_chaser
+# Install script for directory: /home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/src/ball_chaser
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/fftai/Documents/Robot-ROS/udacity_project_gochaseit/install")
+  set(CMAKE_INSTALL_PREFIX "/home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/fftai/Documents/Robot-ROS/udacity_project_gochaseit/build/ball_chaser/catkin_generated/installspace/ball_chaser.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/build/ball_chaser/catkin_generated/installspace/ball_chaser.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ball_chaser/cmake" TYPE FILE FILES
-    "/home/fftai/Documents/Robot-ROS/udacity_project_gochaseit/build/ball_chaser/catkin_generated/installspace/ball_chaserConfig.cmake"
-    "/home/fftai/Documents/Robot-ROS/udacity_project_gochaseit/build/ball_chaser/catkin_generated/installspace/ball_chaserConfig-version.cmake"
+    "/home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/build/ball_chaser/catkin_generated/installspace/ball_chaserConfig.cmake"
+    "/home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/build/ball_chaser/catkin_generated/installspace/ball_chaserConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ball_chaser" TYPE FILE FILES "/home/fftai/Documents/Robot-ROS/udacity_project_gochaseit/src/ball_chaser/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ball_chaser" TYPE FILE FILES "/home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/src/ball_chaser/package.xml")
 endif()
 

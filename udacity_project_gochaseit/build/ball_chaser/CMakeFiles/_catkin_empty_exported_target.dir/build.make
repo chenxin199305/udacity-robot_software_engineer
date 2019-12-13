@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/fftai/Documents/Robot-ROS/udacity_project_gochaseit/src
+CMAKE_SOURCE_DIR = /home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/fftai/Documents/Robot-ROS/udacity_project_gochaseit/build
+CMAKE_BINARY_DIR = /home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/build
 
 # Utility rule file for _catkin_empty_exported_target.
 
@@ -63,10 +63,10 @@ ball_chaser/CMakeFiles/_catkin_empty_exported_target.dir/build: _catkin_empty_ex
 .PHONY : ball_chaser/CMakeFiles/_catkin_empty_exported_target.dir/build
 
 ball_chaser/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	cd /home/fftai/Documents/Robot-ROS/udacity_project_gochaseit/build/ball_chaser && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
+	cd /home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/build/ball_chaser && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
 .PHONY : ball_chaser/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 ball_chaser/CMakeFiles/_catkin_empty_exported_target.dir/depend:
-	cd /home/fftai/Documents/Robot-ROS/udacity_project_gochaseit/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fftai/Documents/Robot-ROS/udacity_project_gochaseit/src /home/fftai/Documents/Robot-ROS/udacity_project_gochaseit/src/ball_chaser /home/fftai/Documents/Robot-ROS/udacity_project_gochaseit/build /home/fftai/Documents/Robot-ROS/udacity_project_gochaseit/build/ball_chaser /home/fftai/Documents/Robot-ROS/udacity_project_gochaseit/build/ball_chaser/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/src /home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/src/ball_chaser /home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/build /home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/build/ball_chaser /home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/build/ball_chaser/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ball_chaser/CMakeFiles/_catkin_empty_exported_target.dir/depend
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/fftai/Documents/Robot-ROS/udacity_project_gochaseit/src
+CMAKE_SOURCE_DIR = /home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/fftai/Documents/Robot-ROS/udacity_project_gochaseit/build
+CMAKE_BINARY_DIR = /home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/build
 
 # Utility rule file for run_tests.
 
@@ -67,6 +67,6 @@ CMakeFiles/run_tests.dir/clean:
 .PHONY : CMakeFiles/run_tests.dir/clean
 
 CMakeFiles/run_tests.dir/depend:
-	cd /home/fftai/Documents/Robot-ROS/udacity_project_gochaseit/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fftai/Documents/Robot-ROS/udacity_project_gochaseit/src /home/fftai/Documents/Robot-ROS/udacity_project_gochaseit/src /home/fftai/Documents/Robot-ROS/udacity_project_gochaseit/build /home/fftai/Documents/Robot-ROS/udacity_project_gochaseit/build /home/fftai/Documents/Robot-ROS/udacity_project_gochaseit/build/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/src /home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/src /home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/build /home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/build /home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/build/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/run_tests.dir/depend
 

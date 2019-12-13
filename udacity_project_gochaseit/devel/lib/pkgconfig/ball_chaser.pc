@@ -1,8 +1,8 @@
-prefix=/home/fftai/Documents/Robot-ROS/udacity_project_gochaseit/devel
+prefix=/home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/devel
 
 Name: ball_chaser
 Description: Description of ball_chaser
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/fftai/Documents/Robot-ROS/udacity_project_gochaseit/devel/lib 
+Libs: -L/home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/devel/lib 
 Requires: 

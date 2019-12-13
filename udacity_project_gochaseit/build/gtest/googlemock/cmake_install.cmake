@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/fftai/Documents/Robot-ROS/udacity_project_gochaseit/install")
+  set(CMAKE_INSTALL_PREFIX "/home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/fftai/Documents/Robot-ROS/udacity_project_gochaseit/build/gtest/googlemock/gtest/cmake_install.cmake")
+  include("/home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/build/gtest/googlemock/gtest/cmake_install.cmake")
 
 endif()
 
