@@ -294,7 +294,7 @@ _catkin_empty_exported_target: cmake_check_build_system
 
 # fast build rule for target.
 _catkin_empty_exported_target/fast:
-	$(MAKE) -f my_robot/CMakeFiles/_catkin_empty_exported_target.dir/build.make my_robot/CMakeFiles/_catkin_empty_exported_target.dir/build
+	$(MAKE) -f ball_chaser/CMakeFiles/_catkin_empty_exported_target.dir/build.make ball_chaser/CMakeFiles/_catkin_empty_exported_target.dir/build
 .PHONY : _catkin_empty_exported_target/fast
 
 # Help Target

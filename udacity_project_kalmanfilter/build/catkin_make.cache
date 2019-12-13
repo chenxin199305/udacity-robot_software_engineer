@@ -1,0 +1,2 @@
+turtlebot_simulator/turtlebot_gazebo:turtlebot_simulator/turtlebot_simulator:turtlebot_simulator/turtlebot_stage:turtlebot_simulator/turtlebot_stdr
+-DCATKIN_DEVEL_PREFIX=/home/fftai/Documents/Robot-ROS/udacity_project_kalmanfilter/devel -DCMAKE_INSTALL_PREFIX=/home/fftai/Documents/Robot-ROS/udacity_project_kalmanfilter/install -G Unix Makefiles

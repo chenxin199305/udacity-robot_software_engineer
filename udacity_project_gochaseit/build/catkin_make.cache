@@ -1,2 +1,2 @@
-my_robot
+ball_chaser:my_robot
 -DCATKIN_DEVEL_PREFIX=/home/fftai/Documents/Robot-ROS/udacity_project_gochaseit/devel -DCMAKE_INSTALL_PREFIX=/home/fftai/Documents/Robot-ROS/udacity_project_gochaseit/install -G Unix Makefiles

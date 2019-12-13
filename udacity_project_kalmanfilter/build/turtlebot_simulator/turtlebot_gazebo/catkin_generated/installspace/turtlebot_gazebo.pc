@@ -1,0 +1,8 @@
+prefix=/home/fftai/Documents/Robot-ROS/udacity_project_kalmanfilter/install
+
+Name: turtlebot_gazebo
+Description: Description of turtlebot_gazebo
+Version: 2.2.3
+Cflags: 
+Libs: -L/home/fftai/Documents/Robot-ROS/udacity_project_kalmanfilter/install/lib 
+Requires: 
