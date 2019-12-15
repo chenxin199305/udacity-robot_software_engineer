@@ -3,6 +3,6 @@ prefix=/home/fftai/Documents/udacity-robot_software_engineer/udacity_project_goc
 Name: ball_chaser
 Description: Description of ball_chaser
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/install/include
 Libs: -L/home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/install/lib 
-Requires: 
+Requires: std_msgs
