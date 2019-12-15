@@ -1,2 +1,2 @@
 
--DCATKIN_DEVEL_PREFIX=/home/fftai/Documents/Robot-ROS/udacity_project_gazebo/devel -DCMAKE_INSTALL_PREFIX=/home/fftai/Documents/Robot-ROS/udacity_project_gazebo/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gazebo/devel -DCMAKE_INSTALL_PREFIX=/home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gazebo/install -G Unix Makefiles

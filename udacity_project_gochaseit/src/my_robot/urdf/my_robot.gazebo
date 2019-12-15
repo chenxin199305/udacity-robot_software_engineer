@@ -42,6 +42,7 @@
           <far>300</far>
         </clip>
       </camera>
+
       <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
         <alwaysOn>true</alwaysOn>
         <updateRate>0.0</updateRate>
@@ -56,6 +57,7 @@
         <distortionT1>0.0</distortionT1>
         <distortionT2>0.0</distortionT2>
       </plugin>
+
     </sensor>
   </gazebo>
 
@@ -89,10 +91,12 @@
           <stddev>0.01</stddev>
         </noise>
       </ray>
+
       <plugin name="gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_laser.so">
         <topicName>/scan</topicName>
         <frameName>hokuyo</frameName>
       </plugin>
+   
     </sensor>
   </gazebo>
 
