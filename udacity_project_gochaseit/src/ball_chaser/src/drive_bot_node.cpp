@@ -21,8 +21,8 @@ bool handle_drive_request(
     geometry_msgs::Twist motor_command;
         
     // Set wheel velocities, forward [0.5, 0.0]
-    motor_command.linear.x = 0.5;
-    motor_command.angular.z = 0.0;
+    motor_command.linear.x = request.linear_x;
+    motor_command.angular.z = request.angular_z;
         
     // Publish angles to drive the robot
     motor_command_publisher.publish(motor_command);
@@ -46,7 +46,7 @@ int main(int argc, char** argv)
     // while (ros::ok()) {
     // }
 
-    ROS_INFO("Ready to start /command_robot service.");
+    ROS_INFO("Ready to start drive_bot node.");
 
     // TODO: Handle ROS communication events
     ros::spin();

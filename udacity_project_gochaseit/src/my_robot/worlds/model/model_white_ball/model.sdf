@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <sdf version='1.6'>
-  <model name='model_ball'>
+  <model name='model_white_ball'>
     <link name='link_0'>
       <inertial>
         <mass>1</mass>
@@ -12,21 +12,33 @@
           <iyz>0</iyz>
           <izz>0.1</izz>
         </inertia>
+        <pose frame=''>0 0 0 0 -0 0</pose>
       </inertial>
-      <pose frame=''>3.5499 -7.47455 0.5 0 -0 0</pose>
+      <pose frame=''>0 -0 0 0 -0 0</pose>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
+      <kinematic>0</kinematic>
+      <enable_wind>0</enable_wind>
       <visual name='visual'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <sphere>
-            <radius>0.5</radius>
+            <radius>0.1</radius>
           </sphere>
         </geometry>
         <material>
           <lighting>1</lighting>
           <script>
             <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/White</name>
+            <name>Gazebo/Grey</name>
           </script>
+          <ambient>1 1 1 1</ambient>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>1 1 1 1</specular>
+          <emissive>1 1 1 1</emissive>
         </material>
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
@@ -37,7 +49,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <sphere>
-            <radius>0.5</radius>
+            <radius>0.1</radius>
           </sphere>
         </geometry>
         <surface>

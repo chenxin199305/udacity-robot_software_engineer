@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+
+    <node pkg="ball_chaser" type="drive_bot_node" name="drive_bot_node" />
+    <node pkg="ball_chaser" type="process_image_node" name="process_image_node" />
+
+</launch>
