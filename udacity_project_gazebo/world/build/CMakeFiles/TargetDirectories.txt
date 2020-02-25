@@ -1,3 +1,0 @@
-/home/fftai/Documents/Robot-ROS/udacity_project_gazebo/world/build/CMakeFiles/rebuild_cache.dir
-/home/fftai/Documents/Robot-ROS/udacity_project_gazebo/world/build/CMakeFiles/project_gazebo.dir
-/home/fftai/Documents/Robot-ROS/udacity_project_gazebo/world/build/CMakeFiles/edit_cache.dir

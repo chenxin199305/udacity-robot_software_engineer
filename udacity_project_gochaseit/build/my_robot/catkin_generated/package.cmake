@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "my_robot")
 set(my_robot_VERSION "0.0.0")
-set(my_robot_MAINTAINER "fftai <fftai@todo.todo>")
+set(my_robot_MAINTAINER "fftai <xin.chen@fftai.com>")
 set(my_robot_PACKAGE_FORMAT "2")
 set(my_robot_BUILD_DEPENDS )
 set(my_robot_BUILD_EXPORT_DEPENDS )

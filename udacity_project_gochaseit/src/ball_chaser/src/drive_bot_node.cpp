@@ -43,9 +43,20 @@ int main(int argc, char** argv)
     command_robot_service = n.advertiseService("/ball_chaser/command_robot", handle_drive_request);
 
     // TODO: Delete the loop, move the code to the inside of the callback function and make the necessary changes to publish the requested velocities instead of constant values
-    // while (ros::ok()) {
-    // }
-
+    /*
+    while (ros::ok()) {
+        // Create a motor_command object of type geometry_msgs::Twist
+        geometry_msgs::Twist motor_command;
+            
+        // Set wheel velocities, forward [0.5, 0.0]
+        motor_command.linear.x = 0.1;
+        motor_command.angular.z = 0;
+            
+        // Publish angles to drive the robot
+        motor_command_publisher.publish(motor_command);
+    }
+    */
+    
     ROS_INFO("Ready to start drive_bot node.");
 
     // TODO: Handle ROS communication events

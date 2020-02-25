@@ -2,8 +2,13 @@
 
 <robot name="my_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
   
+  <!--********************************************************************-->
+  <!-- Notice : Even we use .gazebo here, it is actually axcro file -->
   <xacro:include filename="$(find my_robot)/urdf/my_robot.gazebo" />
+  <!--********************************************************************-->
 
+  <!--********************************************************************-->
+  <!-- Robot Structure -->
   <link name="robot_footprint"></link>
 
   <joint name="robot_footprint_joint" type="fixed">
@@ -68,7 +73,6 @@
     </visual>
 
   </link>
-
   
   <link name='left_wheel'>
     <pose>0 0 0.1 0 0 0</pose>
@@ -144,7 +148,10 @@
     <limit effort="10000" velocity="1000"/>
     <dynamics damping="1.0" friction="1.0"/>
   </joint>
+  <!--********************************************************************-->
 
+  <!--********************************************************************-->
+  <!-- Camera Sensor -->
   <link name="camera">
 
     <inertial>
@@ -177,7 +184,10 @@
     <parent link="chassis"/>
     <axis xyz="0 1 0" rpy="0 0 0"/>
   </joint>
+  <!--********************************************************************-->
 
+  <!--********************************************************************-->
+  <!-- Hokuyo Laser Sensor -->
   <link name="hokuyo">
 
     <inertial>
@@ -210,5 +220,6 @@
     <parent link="chassis"/>
     <axis xyz="0 1 0" rpy="0 0 0"/>
   </joint>
+  <!--********************************************************************-->
 
 </robot>

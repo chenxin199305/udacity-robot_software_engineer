@@ -1,8 +1,8 @@
-prefix=/home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/devel
+prefix=/home/fftai/Documents/windows_shared_folder/class_udacity_robot_engineer/udacity_robot_software_engineer/udacity_project_gochaseit/devel
 
 Name: ball_chaser
 Description: Description of ball_chaser
 Version: 0.0.0
-Cflags: -I/home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/devel/include
-Libs: -L/home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/devel/lib 
+Cflags: -I/home/fftai/Documents/windows_shared_folder/class_udacity_robot_engineer/udacity_robot_software_engineer/udacity_project_gochaseit/devel/include
+Libs: -L${prefix}/lib 
 Requires: std_msgs

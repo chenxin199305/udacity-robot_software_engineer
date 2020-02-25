@@ -1,7 +1,7 @@
 # CMake generated Testfile for 
-# Source directory: /usr/src/googletest
-# Build directory: /home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/build/gtest
+# Source directory: /usr/src/gmock
+# Build directory: /home/fftai/Documents/windows_shared_folder/class_udacity_robot_engineer/udacity_robot_software_engineer/udacity_project_gochaseit/build/gtest
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
-subdirs("googlemock")
+subdirs(gtest)
