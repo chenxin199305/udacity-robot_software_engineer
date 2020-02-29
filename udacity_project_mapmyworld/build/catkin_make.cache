@@ -1,0 +1,2 @@
+map_my_world:my_robot:teleop_twist_keyboard
+-DCATKIN_DEVEL_PREFIX=/home/fftai/Documents/windows_shared_folder/class_udacity_robot_engineer/udacity_robot_software_engineer/udacity_project_mapmyworld/devel -DCMAKE_INSTALL_PREFIX=/home/fftai/Documents/windows_shared_folder/class_udacity_robot_engineer/udacity_robot_software_engineer/udacity_project_mapmyworld/install -G Unix Makefiles

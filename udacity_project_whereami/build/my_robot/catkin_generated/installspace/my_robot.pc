@@ -1,8 +1,8 @@
-prefix=/home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/install
+prefix=/home/fftai/Documents/windows_shared_folder/class_udacity_robot_engineer/udacity_robot_software_engineer/udacity_project_whereami/install
 
 Name: my_robot
 Description: Description of my_robot
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/install/lib 
+Libs: -L${prefix}/lib 
 Requires: 

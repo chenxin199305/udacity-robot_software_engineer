@@ -1,3 +1,0 @@
-/home/fftai/Documents/windows_shared_folder/class_udacity_robot_engineer/udacity-robot_software_engineer/udacity_project_buildmyworld/world/build/CMakeFiles/rebuild_cache.dir
-/home/fftai/Documents/windows_shared_folder/class_udacity_robot_engineer/udacity-robot_software_engineer/udacity_project_buildmyworld/world/build/CMakeFiles/edit_cache.dir
-/home/fftai/Documents/windows_shared_folder/class_udacity_robot_engineer/udacity-robot_software_engineer/udacity_project_buildmyworld/world/build/CMakeFiles/project_gazebo.dir

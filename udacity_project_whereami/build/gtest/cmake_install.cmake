@@ -1,8 +1,8 @@
-# Install script for directory: /usr/src/googletest
+# Install script for directory: /usr/src/gmock
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/install")
+  set(CMAKE_INSTALL_PREFIX "/home/fftai/Documents/windows_shared_folder/class_udacity_robot_engineer/udacity_robot_software_engineer/udacity_project_whereami/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,14 +32,9 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-# Is this installation the result of a crosscompile?
-if(NOT DEFINED CMAKE_CROSSCOMPILING)
-  set(CMAKE_CROSSCOMPILING "FALSE")
-endif()
-
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/fftai/Documents/udacity-robot_software_engineer/udacity_project_gochaseit/build/gtest/googlemock/cmake_install.cmake")
+  include("/home/fftai/Documents/windows_shared_folder/class_udacity_robot_engineer/udacity_robot_software_engineer/udacity_project_whereami/build/gtest/gtest/cmake_install.cmake")
 
 endif()
 

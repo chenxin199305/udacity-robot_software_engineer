@@ -21,6 +21,8 @@ void drive_robot(float lin_x, float ang_z)
 void process_image_callback(const sensor_msgs::Image img)
 {
     int white_pixel = 255;
+    
+    // ROS_INFO("img: height=%d, width=%d", img.height, img.width);
 
     // TODO: Loop through each pixel in the image and check if there's a bright white one
     // Then, identify if this pixel falls in the left, mid, or right side of the image
@@ -32,34 +34,33 @@ void process_image_callback(const sensor_msgs::Image img)
         {
             unsigned char pixel_value = img.data[i * img.width + j];
 
-            ROS_INFO("img: position height=%d, width=%d, pixel_value=%d", i, j, pixel_value);
-
-            if (pixel_value == white_pixel)
+            // As it is camera, due to light noise, it is really hard for it to get 255 value
+            if (pixel_value > (white_pixel - 100))
             {
-                ROS_INFO("img: white pixel position height=%d, width=%d", i, j);
+                ROS_INFO("img: position height=%d, width=%d, pixel_value=%d", i, j, pixel_value);
 
                 if (j >= 0 && j < (img.width * 1 / 3))
                 {
                     ROS_INFO("L");
-                    drive_robot(0.001, -0.5);
+                    drive_robot(0.1, 0.5);
                     goto result_success;
                 }
                 else if (j >= (img.width * 1 / 3) && j < (img.width * 2 / 3))
                 {
                     ROS_INFO("M");
-                    drive_robot(0.001, 0.0);
+                    drive_robot(0.1, 0.0);
                     goto result_success;
                 }
                 else if (j > (img.width * 2 / 3) && j <= (img.width * 3 / 3))
                 {
                     ROS_INFO("R");
-                    drive_robot(0.001, 0.5);
+                    drive_robot(0.1, -0.5);
                     goto result_success;
                 }
                 else
                 {
                     ROS_INFO("M");
-                    drive_robot(0.001, 0.0);
+                    drive_robot(0.1, 0.0);
                     goto result_success;
                 }
             }
@@ -69,7 +70,7 @@ void process_image_callback(const sensor_msgs::Image img)
         }
     }
 
-    ROS_INFO("Nothing");
+    // ROS_INFO("Nothing");
     drive_robot(0.0, 0.0);
 
 result_success:
@@ -90,6 +91,14 @@ int main(int argc, char** argv)
     ros::Subscriber sub1 = n.subscribe("/camera/rgb/image_raw", 10, process_image_callback);
 
     ROS_INFO("Ready to start process_image node.");
+
+    // Test Service communication
+    /*
+    while(ros::ok()) 
+    {
+        drive_robot(0.1, 0.0);
+    }
+    */
 
     // Handle ROS communication events
     ros::spin();

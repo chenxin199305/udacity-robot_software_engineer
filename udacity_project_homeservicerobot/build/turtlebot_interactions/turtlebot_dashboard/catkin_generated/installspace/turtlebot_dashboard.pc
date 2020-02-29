@@ -1,0 +1,8 @@
+prefix=/home/fftai/Documents/windows_shared_folder/class_udacity_robot_engineer/udacity_robot_software_engineer/udacity_project_homeservicerobot/install
+
+Name: turtlebot_dashboard
+Description: Description of turtlebot_dashboard
+Version: 2.3.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

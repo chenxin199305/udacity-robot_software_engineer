@@ -2,19 +2,10 @@
 
 <launch>
 
-  <!-- Robot pose -->
-  <arg name="x" default="0"/>
-  <arg name="y" default="0"/>
-  <arg name="z" default="0"/>
-  <arg name="roll" default="0"/>
-  <arg name="pitch" default="0"/>
-  <arg name="yaw" default="0"/>
-
-  <!-- Launch other relevant files, here, is the urdf file -->
-  <include file="$(find my_robot)/launch/robot_description.launch"/>
-
+  <!--********************************************************************-->
+  <!-- World -->
   <!-- World File -->
-  <arg name="world_file" default="$(find my_robot)/worlds/jason.world"/>
+  <arg name="world_file" default="$(find my_robot)/worlds/empty_world.world"/>
 
   <!-- Launch Gazebo World -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
@@ -23,26 +14,43 @@
     <arg name="gui" value="true" />
     <arg name="world_name" value="$(arg world_file)"/>
   </include>
+  <!--********************************************************************-->
+
+  <!--********************************************************************-->
+  <!-- Robot -->
+  <!-- Launch other relevant files, here, is the urdf file -->
+  <include file="$(find my_robot)/launch/robot_description.launch"/>
 
   <!-- Find my robot Description-->
   <!-- only setup param here... -->
-  <param  name="robot_description" 
-          command="$(find xacro)/xacro '$(find my_robot)/urdf/my_robot.xacro'"/>
+  <!--<param  name="robot_description" 
+          command="$(find xacro)/xacro '$(find my_robot)/urdf/my_robot.xacro'"/>-->
 
-  <!-- Spawn My Robot -->
+  <!-- Robot Position Setup -->
+  <arg name="x" default="0.78"/>
+  <arg name="y" default="1.14"/>
+  <arg name="z" default="0.1"/>
+  <arg name="roll" default="0.0"/>
+  <arg name="pitch" default="0.0004"/>
+  <arg name="yaw" default="0.0057"/>
+
+  <!-- Spawn My Robot to the Gazebo World -->
   <node name="urdf_spawner" 
-        pkg="gazebo_ros" 
-        type="spawn_model" 
-        respawn="false" 
-        output="screen" 
-        args="-urdf -param robot_description -model my_robot 
-              -x $(arg x) -y $(arg y) -z $(arg z)
-              -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)"/>
+    pkg="gazebo_ros" 
+    type="spawn_model" 
+    respawn="false" 
+    output="screen" 
+    args="-urdf -param robot_description -model my_robot 
+          -x $(arg x) -y $(arg y) -z $(arg z)
+          -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)"/>
+  <!--********************************************************************-->
   
+  <!--********************************************************************-->
   <!--launch rviz-->
   <node name="rviz" 
         pkg="rviz" 
         type="rviz" 
         respawn="false"/>
-
+  <!--********************************************************************-->
+  
 </launch>

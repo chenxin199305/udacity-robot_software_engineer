@@ -1,0 +1,8 @@
+prefix=/home/fftai/Documents/windows_shared_folder/class_udacity_robot_engineer/udacity_robot_software_engineer/udacity_project_whereami/install
+
+Name: where_am_i
+Description: Description of where_am_i
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
